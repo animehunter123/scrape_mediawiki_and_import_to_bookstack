@@ -5,7 +5,8 @@ from bs4 import BeautifulSoup
 import bookstack
 
 # Get the MediaWiki page
-url = "https://example.com/wiki/Main_Page"
+url_root = "https://example.com/wiki"
+url = url_root + "/Main_Page"
 response = requests.get(url)
 
 # Parse the page with BeautifulSoup
@@ -24,7 +25,7 @@ for article_title in article_titles_list:
     print("Importing article:", article_title)
 
     # Get the article content
-    url = "https://example.com/wiki/" + article_title
+    url = url_root + article_title
     response = requests.get(url)
 
     # Parse the page with BeautifulSoup
@@ -53,7 +54,7 @@ for article in article_titles_list:
     print("Importing article:", article)
 
     # Get the article content
-    url = "https://example.com/wiki/" + article
+    url = url_root + article
     response = requests.get(url)
 
     # Parse the page with BeautifulSoup
