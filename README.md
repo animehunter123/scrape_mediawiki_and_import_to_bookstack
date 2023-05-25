@@ -1,5 +1,5 @@
 # scrape_mediawiki_and_import_to_bookstack
-A script using Python Beautiful Soup to scrape a local mediawiki, create list, and insert them into a "BOOK" in Bookstack!
+A script using Python Beautiful Soup to scrape a local mediawiki, create list, and insert them into a "BOOK" in Bookstack! (I am still trying to figure out how to use API's, there is a UserProfile\APIKey in bookstack, but unsure atm...)
 
 
 # Todo Ideas...
